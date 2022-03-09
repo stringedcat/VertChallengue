@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left {
+  margin-left: 10px;
+}
+.landingText {
+  margin-left: 10px;
+  margin-bottom: 300px;
+}
