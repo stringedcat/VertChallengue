@@ -15,7 +15,19 @@ const Dashboard = ({ user }) => {
     console.log(Activities);
   }, []);
 
-  return <div>Dashboard</div>;
+  return (
+    <div>
+      {Activities.map((e) => (
+        <>
+          <h5>{e.name}</h5>
+          <p>Distance: {e.distance}</p>
+          <p>Elevation Gain: {e.elevation_gain}</p>
+          <p>Elapsed Time: {e.elapsed_time}</p>
+          <p>Date: {e.start_date}</p>
+        </>
+      ))}
+    </div>
+  );
 };
 
 export default Dashboard;
